@@ -1,4 +1,6 @@
-*,::after::before {
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,400;0,800;1,200;1,300;1,600&family=Rubik:wght@600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +10,7 @@ body {
     background-color: lightgrey;
     line-height: 1.5;
     font-size: 0.875rem;
+    font-family: 'Poppins';
 }
 
 ul{
@@ -34,8 +37,15 @@ main {
 /*Navbar*/
 
 nav {
-    background: #2D2D2D;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: #2D2D2D;
+    width: 100%;
+    z-index: 2;
+    transition: all linear 0.3s ;
+}
+
+.hover {
+    background-color: #2D2D2D;
 }
 
 .nav-logo {
@@ -90,10 +100,13 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
-    .nav {
-        max-width: 1170px;
-        margin: 0 auto;
+    nav {
+        background-color: transparent;
+    }
+
+    .nav {        
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
@@ -124,3 +137,141 @@ nav {
     }
 }
 /* 2D2D2D      C69C6D */
+
+/* homepage Image */
+.box {
+    background: black;
+}
+
+.box img {
+    width: 100%;
+    opacity: 40%;
+}
+
+.content {
+    position: relative;
+    top: -38vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 5vw;
+}
+
+.content h2 {
+    font-size: 2vw;
+    margin-bottom: 50px;
+    font-family: 'Hurricane';
+}
+
+.aboutus-button {
+    background-color: #C69C6D;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 2vw;
+    font-family: 'Rubik';
+}
+
+.aboutus-button:hover {
+    background-color: darkblue;
+}
+
+.search-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15vw;
+    background-color: #2D2D2D;
+    width: 600px;
+    height: 60px;
+    padding: 10px;
+}
+
+.finddate a {
+    background-color: #C69C6D;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+input {
+    background-color: lightgray;
+    color: black;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 250px;
+}
+
+.logo-footer p {
+    width: 350px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.contact .icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+}
+
+.contact .icons i {
+    color: #C69C6D;
+}
+
+.fa-location-dot {
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+
+.fa-mobile {
+    margin-bottom: 48px;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socials-icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.footer-socials-icons i {
+    margin: 10px;
+    color: #C69C6D;
+    font-size: 30px;
+}

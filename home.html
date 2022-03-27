@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigator</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="nav-bar">
         <div class="nav">
             <div class="nav-logo">
                 <img id="logo" src="./logo.png" alt="logo"/>
@@ -25,9 +25,6 @@
                 </div>
                 <li>
                     <a href="./rates.html" target="_blank">Rates</a>
-                </li>
-                <li>
-                    <a href="./rental.html" target="_blank">Rentals</a>
                 </li>
                 <li>
                     <a href="./about.html" target="_blank">About Us</a>
@@ -55,12 +52,133 @@
                 <li>
                     <a href="https://www.instagram.com/" target="_blank">
                         <i class="fab fa-instagram"></i>
+                        
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="box"></div>
+
+    <div class="box"><img src="./cottage.jpg" alt="Background Cottage"></div>
+    
+    <div class="content">
+        <h1>Himalayan Cottages</h1>
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h2>
+        <a class="aboutus-button" href="">About Us</a>
+        <br>
+        <div class="search-date">
+            <div class="startdate">Check-in <br>
+                <input type="date" id="start" name="trip-start" value="DD MM YYY"
+                max="2023-09-31">
+            </div>
+
+            <div class="enddate">Check-out <br>
+                <input type="date" id="end" name="trip-end" value="DD MM YYY"
+                min="2022-01-01" max="2023-09-31">
+            </div>
+            
+            <div class="adults">Adults <br>
+                <input type="number" min="0" value="0" max="99" name="Adults" id="adults">
+            </div>
+            
+            <div class="children">Children<br>
+                <input type="number" min="0" value="0" max="99" name="Kids" id="kids">
+            </div>
+            
+            <div class="finddate"><a class="date-button" href="">Find a Date</a></div>
+       
+        </div>
+    </div>
+
+    <div class="recreation">
+        <div class="rec-title">
+            <h1 class="title">Recreation</h1>
+            <p>We have loads of activites avaliable</p>
+        </div>
+
+        <div class="image">
+            <img src="./hiking.jpg" alt="Hiking">
+        </div>
+
+        <div class="buttons">
+            <button class="rec-button active" data-id="hiking">Hiking</button>
+            <button class="rec-button" data-id="rentals">Watercraft Rentals</button>
+            <button class="rec-button" data-id="fishing">Fishing</button>
+            <button class="rec-button" data-id="skiing">Skiing</button>
+        </div>
+
+        <div class="rec-info">
+            <div class="recItem active" id="hiking">
+                <h2>Hiking</h2>
+                <p>There are many trails around town. Whether it be hiking, cycling, going on an ATV adventure or going on a walk with your dogs there is a trail for you.
+                    There are many diffrent trails ones that take you to mountain peaks, trails by the beach or by the river. There are also many camping spots if you want
+                to go on a off-the-grid adventure.</p>
+            </div>
+
+            <div class="recItem" id="rentals">
+                <h2>Watercraft Rentals</h2>
+                <p>There are many Marinas to rent watercraft's from. There are boats and yatch rentals if you want to go boating with family and friends. There are also jetski,
+                    paddle board rentals for other water activities. If you have your own watercrafts there are many boat launch sites around town.   </p>
+            </div>
+
+            <div class="recItem" id="fishing">
+                <h2>Fishing</h2>
+                <p>The town also has many fishing activites to choose from. There are many wonderful peirs and river fishing spots for those who want to stay on land. You can also
+                    rent boats and go to the many lakes or rivers to fish. There are also many ice-fishing spots to check out in the winter.  </p>
+            </div>
+
+            <div class="recItem" id="skiing">
+                <h2>Skiing</h2>
+                <p>The town also has many activites for the winter. There are also many ski resorts in the area. There are many skiing or snowboarding trails for any skill levels. 
+                    There are also tubing hills you can go to with the whole family.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-footer">
+            <img src="./logo.png" alt="Himalayan Cottages" class="footer-logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="contact">
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-mobile"></i>
+                <i class="fa-solid fa-square-envelope"></i>
+            </div>
+            <div class="contact-info">
+                785 Cottage Boulevard, <br> St.Clements, Ontario <br> N5H 8W9
+                <br>
+                <br>
+                123-456-7890
+                <br>
+                987-654-3210
+                <br>
+                <br>
+                cottagerental@cottagerental.ca
+            </div>
+
+        </div>
+
+        <div class="footer-socials">
+            <h1>Follow Us</h1>
+            <div class="footer-socials-icons">
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-github-square"></i>
+            </div>
+            <h2>Powered by Umang Poudyal</h2>
+
+        </div>
+    </footer>
+
+
+
 </body>
 <script src="./cottage.js"></script>
+<script src="https://kit.fontawesome.com/3211c4b56e.js" crossorigin="anonymous"></script>
 </html>
