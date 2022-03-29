@@ -209,8 +209,123 @@ input {
     color: black;
 }
 
+/* Gallery */
+.gallery-container{
+    position: relative;
+    top: -25vw;
+}
+
+.gallery-container h1{
+    width: 100%;
+    font-size: 5vw;
+    font-family: 'Rubik';
+    color: #C69C6D;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 20vw;
+    margin: 10px;
+    transition: 0.3s all linear;
+    cursor: pointer;
+}
+
+.gallery img:hover{
+    transform: scale(1.2);
+}
+
+.gallery-container a{
+    display: flex;
+    justify-content: right;
+    margin-right: 10vw;
+}
 
 
+/* Recreation */
+.recreation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -15vw;
+}
+
+.rec-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec-title h1{
+    font-size: 100px;
+    font-family: 'Rubik';
+    color: #C69C6D;
+}
+
+.rec-title p {
+    position: relative;
+    color: gray;
+    top: -20px;
+    margin-bottom: 1vw;
+}
+
+.image {
+    width: 40%;
+    margin-bottom: 1vw;
+}
+
+.image img {
+    width: 100%;
+}
+
+.rec-content {
+    background-color: white;
+    border-radius: 25px;
+    width: 60%;
+    min-width: 600px;
+}
+
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color: #2D2D2D;
+}
+
+button {
+    width: 100%;
+    height: 6vh;
+    font-size: 20px;
+    font-family: 'Rubik';
+    cursor: pointer;
+    transition: all .3s linear;
+    border: none;
+    background: transparent;
+    color: #C69C6D;
+}
+
+.btnactive {
+    background-color: white;
+    background: white;
+}
+
+.recItem {
+    display: none;
+}
+
+.active{
+    display: block;
+    padding: 10px;
+}
 /* Footer */
 
 

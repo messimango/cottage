@@ -28,3 +28,25 @@ window.addEventListener('scroll', function () {
     }
     
 })
+
+
+const recCon = document.querySelector(".rec-content");
+const recButtons = document.querySelectorAll(".rec-button");
+const recItems = document.querySelectorAll(".recItem");
+
+
+recCon.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    recButtons.forEach(function (button) {
+      button.classList.remove("btnactive");
+    });
+    e.target.classList.add("btnactive");
+
+    recItems.forEach(function (item) {
+      item.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+});
