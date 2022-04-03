@@ -51,7 +51,6 @@ nav {
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem;
 }
 
@@ -66,6 +65,9 @@ nav {
     cursor: pointer;
     font-size: 1.5rem;
     color: white;
+    position: absolute;
+    top: 20px;
+    right: -40vw;
 }
 
 .menu-toggle:hover{
@@ -87,7 +89,16 @@ nav {
 }
 
 .socials {
-    display: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: white;
+    margin: 3px;
 }
 
 .menu-items {

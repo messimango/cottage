@@ -30,6 +30,8 @@ window.addEventListener('scroll', function () {
 })
 
 
+// recreation tabs
+
 const recCon = document.querySelector(".rec-content");
 const recButtons = document.querySelectorAll(".rec-button");
 const recItems = document.querySelectorAll(".recItem");
